@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Management Simulator</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='/static/style.css' rel='stylesheet' type='text/css'>
+	<style>
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0; /* Added to prevent flex items from shrinking */
+
+}
+
+/* Style for card heading */
+.card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for card content */
+.card p {
+    color: #666;
+    font-size: 16px;
+}
+#rightContainer{
+position: absolute;
+left:-10%;
+top:0%;
+display: flex;
+flex-direction: row;
+margin: 100px;
+}
+
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    align-self: center;
+  }
+  .button1 {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    align-self: center;
+    position: relative;
+    left:28%;   
+  }
+
+	</style>
+</head>
+<body>
+
+<div id="mainContainer">
+	<div id="title">
+		<h1>Memory Management</h1><h3>An Online Simulation</h3>
+	</div>
+
+	<div id="rightContainer">
+        <div id="memoryContainer">
+            <div id="memory"></div>
+        </div>
+
+        <!-- Add three cards for memory allocation strategies -->
+        <div class="card">
+            <h2 style="font-size: 50px;">First Fit</h2>
+            <p>Visualization of First Fit strategy</p>
+            <a href="/templates/first.html" class="button">First Fit</a>
+
+        </div>
+
+        <div class="card">
+            <h2 style="font-size: 50px;">Best Fit</h2>
+            <p>Visualization of Best Fit strategy</p>
+            <a href="/templates/best.html" class="button">Best Fit</a>
+
+        </div>
+
+        <div class="card" style="width: 250px;">
+            <h2 style="font-size: 50px;">Worst Fit</h2>
+            <p>Visualization of Worst Fit strategy</p>
+            <a href="/templates/worst.html" class="button">Worst Fit</a>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
